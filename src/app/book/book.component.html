@@ -1,7 +1,19 @@
-<ol>
-    <li *ngFor='let b of books'>
-      {{b.title}} by 
-      {{b.author.name}}
-    </li>
-  </ol>
-  
+
+  <table >
+    <tr >
+      
+      <th>Book name</th>
+      <th>author name</th>
+    </tr>
+    
+    <tr  *ngFor= 'let b of books'>
+      <td>{{b.title}}
+
+      </td>
+      <td>{{b.author.name}}
+
+    </td>
+      
+    </tr>
+
+  </table>
